@@ -8,7 +8,7 @@
 
 ✨ Features:
 
-# Demo: 
+# Demo: https://mahindra-thar.netlify.app/
 
 🎨 Visual & UI Features:
 

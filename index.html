@@ -1,34 +1,1002 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thar WebPage</title>
+    <title>Mahindra Thar | Build & Configure Your Adventure</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
+
 <body>
-    <div class="container" id="cars">
-        <nav>
-            <img src="Thar logo.png"class="logo">
-            <a href="#" class="btn">Test Drive</a>
-        </nav>
+    <!-- Background Elements -->
+    <div class="bg-pattern"></div>
+    <div class="bg-gradient"></div>
 
-        <div class="content">
-            <h2>THAR</h2>
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="Thar logo.png" class="logo" alt="Mahindra Thar Logo">
+                <div class="logo-text">
+                    <span class="brand">MAHINDRA</span>
+                    <span class="model">THAR</span>
+                </div>
+            </div>
 
-            <h1>4X4 & RWD</h1>
+            <ul class="nav-links">
+                <li><a href="#overview" class="nav-link"><span>Overview</span></a></li>
+                <li><a href="#configure" class="nav-link"><span>Configure</span></a></li>
+                <li><a href="#compare" class="nav-link"><span>Compare</span></a></li>
+                <li><a href="#test-drive" class="nav-link"><span>Test Drive</span></a></li>
+                <li><a href="#gallery" class="nav-link"><span>Gallery</span></a></li>
+                <li><a href="#footer" class="nav-link"><span>Contact</span></a></li>
+            </ul>
 
-            <p>This is Latest version of Mahindra THAR which has been launched in India. with various features like different engine types (Petrol or Diesel), transmission modes (Manual or Automatic), drivetrain configurations (4X4 or RWD).</p>
+            <div class="nav-right">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="#test-drive" class="btn test-drive-btn">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Book Now</span>
+                </a>
+                <div class="mobile-menu-btn">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-            <h3>Chose Color</h3>
+    <!-- Hero Section -->
+    <section class="hero-section" id="overview">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left animate__animated animate__fadeInLeft">
+                    <div class="badge-container">
+                        <span class="badge new">NEW 2026</span>
+                        <span class="badge offroad">4X4 READY</span>
+                        <span class="badge luxury">ADVENTURE EDITION</span>
+                    </div>
 
-            <div class="color-select">
-                <div id="red"></div>
-                <div id="green"></div>
-                <div id="blue"></div>
-                <div id="black"></div>
+                    <h1 class="hero-title">
+                        <span class="title-line">BUILD YOUR</span>
+                        <span class="title-highlight">LEGEND</span>
+                        <span class="title-line">EXPERIENCE FREEDOM</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        <i class="fas fa-bolt"></i>
+                        Customize Your Perfect Adventure Machine
+                    </p>
+
+                    <p class="hero-description">
+                        Craft your dream Thar with our advanced configuration tool.
+                        Choose from multiple engines, transmissions, colors, and accessories
+                        to create a vehicle that matches your adventure style.
+                    </p>
+
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="stat-value">4 <span>Variants</span></div>
+                            <div class="stat-label">To Choose From</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="stat-value">12 <span>Colors</span></div>
+                            <div class="stat-label">Customization</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="stat-value">2 <span>Engines</span></div>
+                            <div class="stat-label">Options</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="stat-value">50+ <span>Features</span></div>
+                            <div class="stat-label">To Customize</div>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="#configure" class="btn primary-btn">
+                            <i class="fas fa-sliders-h"></i>
+                            <span>Configure Now</span>
+                        </a>
+                        <a href="#test-drive" class="btn secondary-btn">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Book Test Drive</span>
+                        </a>
+                        <a href="#compare" class="btn outline-btn">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Compare Models</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-right animate__animated animate__fadeInRight">
+                    <div class="car-display-container">
+                        <div class="car-frame" id="carViewer">
+                            <div class="car-images">
+                                <!-- Car images will be loaded dynamically -->
+                            </div>
+                            <div class="car-shadow"></div>
+                            <div class="car-glow"></div>
+                            <!-- 360 Viewer Controls -->
+                            <div class="viewer-controls">
+                                <button class="viewer-btn" id="rotateLeft">
+                                    <i class="fas fa-undo"></i>
+                                </button>
+                                <button class="viewer-btn" id="rotateRight">
+                                    <i class="fas fa-redo"></i>
+                                </button>
+                                <button class="viewer-btn" id="zoomIn">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                                <button class="viewer-btn" id="zoomOut">
+                                    <i class="fas fa-search-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="color-selector">
+                            <h3 class="selector-title">
+                                <i class="fas fa-palette"></i>
+                                Choose Your Color
+                            </h3>
+                            <div class="color-options" id="colorOptions">
+                                <!-- Color options will be loaded dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Configuration Section -->
+    <section class="config-section" id="configure">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Build Your Thar</span>
+                <h2 class="section-title">Advanced Configuration</h2>
+                <p class="section-subtitle">Customize every aspect of your Thar with our interactive builder</p>
+            </div>
+
+            <div class="config-container">
+                <div class="config-left">
+                    <div class="config-steps">
+                        <div class="step active" data-step="1">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Choose Variant</h4>
+                                <p>Select your base model</p>
+                            </div>
+                        </div>
+                        <div class="step" data-step="2">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Select Engine</h4>
+                                <p>Pick power & fuel type</p>
+                            </div>
+                        </div>
+                        <div class="step" data-step="3">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Transmission</h4>
+                                <p>Choose driving style</p>
+                            </div>
+                        </div>
+                        <div class="step" data-step="4">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Color & Wheels</h4>
+                                <p>Personalize appearance</p>
+                            </div>
+                        </div>
+                        <div class="step" data-step="5">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Accessories</h4>
+                                <p>Add extra features</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="config-summary">
+                        <h3><i class="fas fa-receipt"></i> Summary</h3>
+                        <div class="summary-details">
+                            <div class="summary-item">
+                                <span class="summary-label">Base Price</span>
+                                <span class="summary-value" id="basePrice">₹ 11,99,000</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Engine Upgrade</span>
+                                <span class="summary-value" id="enginePrice">+ ₹ 1,50,000</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Transmission</span>
+                                <span class="summary-value" id="transmissionPrice">+ ₹ 1,00,000</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Accessories</span>
+                                <span class="summary-value" id="accessoriesPrice">+ ₹ 75,000</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span class="summary-label">Total Price</span>
+                                <span class="summary-value" id="totalPrice">₹ 15,24,000</span>
+                            </div>
+                        </div>
+                        <button class="btn primary-btn btn-block" id="saveConfig">
+                            <i class="fas fa-save"></i> Save Configuration
+                        </button>
+                    </div>
+                </div>
+
+                <div class="config-right">
+                    <div class="config-step-content active" id="step1">
+                        <h3>Choose Your Variant</h3>
+                        <div class="variant-options">
+                            <div class="variant-option active" data-variant="ax" data-price="1199000">
+                                <div class="variant-image">
+                                    <img src="AX Optional Thar.png" alt="AX Optional">
+                                </div>
+                                <div class="variant-info">
+                                    <h4>AX Optional</h4>
+                                    <p class="variant-price">₹ 11,99,000</p>
+                                    <ul class="variant-features">
+                                        <li><i class="fas fa-check"></i> Manual Soft Top</li>
+                                        <li><i class="fas fa-check"></i> 7-inch Infotainment</li>
+                                        <li><i class="fas fa-check"></i> Basic AC</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="variant-option" data-variant="lx" data-price="1399000">
+                                <div class="variant-image">
+                                    <img src="LX Thar.png" alt="LX">
+                                </div>
+                                <div class="variant-info">
+                                    <h4>LX</h4>
+                                    <p class="variant-price">₹ 13,99,000</p>
+                                    <ul class="variant-features">
+                                        <li><i class="fas fa-check"></i> Hard Top Option</li>
+                                        <li><i class="fas fa-check"></i> 9-inch Touchscreen</li>
+                                        <li><i class="fas fa-check"></i> Automatic AC</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="config-step-content" id="step2">
+                        <h3>Select Engine Type</h3>
+                        <div class="engine-options">
+                            <div class="engine-option active" data-engine="petrol" data-price="0">
+                                <div class="engine-icon">
+                                    <i class="fas fa-gas-pump"></i>
+                                </div>
+                                <div class="engine-info">
+                                    <h4>2.0L Turbo Petrol</h4>
+                                    <p class="engine-specs">130 kW • 300 Nm • 6-speed</p>
+                                    <div class="engine-features">
+                                        <span><i class="fas fa-tachometer-alt"></i> 0-100: 6.9s</span>
+                                        <span><i class="fas fa-road"></i> Mileage: 15.2 km/l</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="engine-option" data-engine="diesel" data-price="150000">
+                                <div class="engine-icon">
+                                    <i class="fas fa-oil-can"></i>
+                                </div>
+                                <div class="engine-info">
+                                    <h4>2.2L mHawk Diesel</h4>
+                                    <p class="engine-specs">97 kW • 300 Nm • 6-speed</p>
+                                    <div class="engine-features">
+                                        <span><i class="fas fa-tachometer-alt"></i> 0-100: 8.5s</span>
+                                        <span><i class="fas fa-road"></i> Mileage: 16.5 km/l</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="config-step-content" id="step3">
+                        <h3>Choose Transmission</h3>
+                        <div class="transmission-options">
+                            <div class="transmission-option active" data-transmission="manual" data-price="0">
+                                <div class="transmission-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="transmission-info">
+                                    <h4>6-Speed Manual</h4>
+                                    <p>Full control driving experience</p>
+                                    <div class="transmission-features">
+                                        <span><i class="fas fa-bolt"></i> Better Fuel Economy</span>
+                                        <span><i class="fas fa-gamepad"></i> Engaging Drive</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transmission-option" data-transmission="automatic" data-price="100000">
+                                <div class="transmission-icon">
+                                    <i class="fas fa-sliders-h"></i>
+                                </div>
+                                <div class="transmission-info">
+                                    <h4>6-Speed Automatic</h4>
+                                    <p>Convenient city driving</p>
+                                    <div class="transmission-features">
+                                        <span><i class="fas fa-city"></i> Easy City Driving</span>
+                                        <span><i class="fas fa-bolt"></i> Paddle Shifters</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="config-step-content" id="step4">
+                        <h3>Customize Appearance</h3>
+                        <div class="appearance-options">
+                            <div class="appearance-section">
+                                <h4>Wheel Options</h4>
+                                <div class="wheel-options">
+                                    <div class="wheel-option active" data-wheel="17" data-price="0">
+                                        <div class="wheel-preview">
+                                            <i class="fas fa-circle"></i>
+                                        </div>
+                                        <span>17" Alloy</span>
+                                    </div>
+                                    <div class="wheel-option" data-wheel="18" data-price="50000">
+                                        <div class="wheel-preview">
+                                            <i class="fas fa-circle"></i>
+                                        </div>
+                                        <span>18" Alloy</span>
+                                    </div>
+                                    <div class="wheel-option" data-wheel="offroad" data-price="75000">
+                                        <div class="wheel-preview">
+                                            <i class="fas fa-mountain"></i>
+                                        </div>
+                                        <span>Off-road</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appearance-section">
+                                <h4>Roof Type</h4>
+                                <div class="roof-options">
+                                    <div class="roof-option active" data-roof="soft" data-price="0">
+                                        <div class="roof-preview">
+                                            <i class="fas fa-sun"></i>
+                                        </div>
+                                        <span>Soft Top</span>
+                                    </div>
+                                    <div class="roof-option" data-roof="hard" data-price="100000">
+                                        <div class="roof-preview">
+                                            <i class="fas fa-hard-hat"></i>
+                                        </div>
+                                        <span>Hard Top</span>
+                                    </div>
+                                    <div class="roof-option" data-roof="convertible" data-price="200000">
+                                        <div class="roof-preview">
+                                            <i class="fas fa-wind"></i>
+                                        </div>
+                                        <span>Convertible</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="config-step-content" id="step5">
+                        <h3>Add Accessories</h3>
+                        <div class="accessories-options">
+                            <div class="accessory-option" data-accessory="led" data-price="25000">
+                                <div class="accessory-checkbox">
+                                    <input type="checkbox" id="ledLights">
+                                    <label for="ledLights"></label>
+                                </div>
+                                <div class="accessory-info">
+                                    <h4>LED Light Package</h4>
+                                    <p>Premium LED headlights and fog lamps</p>
+                                    <span class="accessory-price">+ ₹ 25,000</span>
+                                </div>
+                            </div>
+                            <div class="accessory-option" data-accessory="audio" data-price="35000">
+                                <div class="accessory-checkbox">
+                                    <input type="checkbox" id="audioSystem">
+                                    <label for="audioSystem"></label>
+                                </div>
+                                <div class="accessory-info">
+                                    <h4>Premium Audio System</h4>
+                                    <p>8-speaker Sony audio with subwoofer</p>
+                                    <span class="accessory-price">+ ₹ 35,000</span>
+                                </div>
+                            </div>
+                            <div class="accessory-option" data-accessory="camera" data-price="15000">
+                                <div class="accessory-checkbox">
+                                    <input type="checkbox" id="camera">
+                                    <label for="camera"></label>
+                                </div>
+                                <div class="accessory-info">
+                                    <h4>360° Camera</h4>
+                                    <p>Surround view camera system</p>
+                                    <span class="accessory-price">+ ₹ 15,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="config-navigation">
+                        <button class="btn outline-btn" id="prevStep">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button class="btn primary-btn" id="nextStep">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Tool -->
+    <section class="compare-section" id="compare">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Smart Choice</span>
+                <h2 class="section-title">Compare All Variants</h2>
+                <p class="section-subtitle">Make an informed decision with our detailed comparison tool</p>
+            </div>
+
+            <div class="compare-container">
+                <div class="compare-table-wrapper">
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th class="feature-header">Features</th>
+                                <th class="variant-header">
+                                    <h4>AX Optional</h4>
+                                    <p class="variant-price-compare">₹ 11.99 Lakh</p>
+                                </th>
+                                <th class="variant-header">
+                                    <h4>LX</h4>
+                                    <p class="variant-price-compare">₹ 13.99 Lakh</p>
+                                </th>
+                                <th class="variant-header">
+                                    <h4>Hard Top</h4>
+                                    <p class="variant-price-compare">₹ 14.99 Lakh</p>
+                                </th>
+                                <th class="variant-header">
+                                    <h4>Convertible</h4>
+                                    <p class="variant-price-compare">₹ 15.99 Lakh</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Engine Options</td>
+                                <td><i class="fas fa-check"></i> Petrol</td>
+                                <td><i class="fas fa-check"></i> Petrol/Diesel</td>
+                                <td><i class="fas fa-check"></i> Petrol/Diesel</td>
+                                <td><i class="fas fa-check"></i> Petrol/Diesel</td>
+                            </tr>
+                            <tr>
+                                <td>Transmission</td>
+                                <td>Manual</td>
+                                <td>Manual/Auto</td>
+                                <td>Manual/Auto</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td>Infotainment</td>
+                                <td>7-inch</td>
+                                <td>9-inch</td>
+                                <td>9-inch</td>
+                                <td>10.25-inch</td>
+                            </tr>
+                            <tr>
+                                <td>Climate Control</td>
+                                <td>Manual</td>
+                                <td>Auto</td>
+                                <td>Dual Zone</td>
+                                <td>3-Zone</td>
+                            </tr>
+                            <tr>
+                                <td>Safety Features</td>
+                                <td>2 Airbags</td>
+                                <td>4 Airbags</td>
+                                <td>6 Airbags</td>
+                                <td>7 Airbags</td>
+                            </tr>
+                            <tr>
+                                <td>Audio System</td>
+                                <td>4 Speakers</td>
+                                <td>6 Speakers</td>
+                                <td>8 Speakers</td>
+                                <td>12 Speakers</td>
+                            </tr>
+                            <tr>
+                                <td>Sunroof</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td>Panoramic</td>
+                                <td>Panoramic</td>
+                            </tr>
+                            <tr>
+                                <td>LED Lights</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="compare-cta">
+                    <button class="btn primary-btn" id="downloadComparison">
+                        <i class="fas fa-download"></i> Download Comparison
+                    </button>
+                    <button class="btn secondary-btn" id="shareComparison">
+                        <i class="fas fa-share-alt"></i> Share Comparison
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Drive Booking -->
+    <section class="booking-section" id="test-drive">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience It</span>
+                <h2 class="section-title">Book Your Test Drive</h2>
+                <p class="section-subtitle">Experience the thrill of Thar firsthand with our easy booking system</p>
+            </div>
+
+            <div class="booking-container">
+                <div class="booking-left">
+                    <div class="booking-card">
+                        <div class="booking-header">
+                            <h3><i class="fas fa-calendar-check"></i> Select Date & Time</h3>
+                            <p>Choose your preferred slot for test drive</p>
+                        </div>
+
+                        <div class="date-picker">
+                            <div class="month-navigation">
+                                <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                                <h4 id="currentMonth">December 2024</h4>
+                                <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <div class="calendar" id="calendar">
+                                <!-- Calendar will be generated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="time-slots">
+                            <h4>Available Time Slots</h4>
+                            <div class="slots-container" id="timeSlots">
+                                <!-- Time slots will be generated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-right">
+                    <div class="booking-form">
+                        <h3><i class="fas fa-user-check"></i> Personal Details</h3>
+
+                        <div class="form-group">
+                            <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="fullName" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneNumber"><i class="fas fa-phone"></i> Phone Number</label>
+                            <input type="tel" id="phoneNumber" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location"><i class="fas fa-map-marker-alt"></i> Preferred Location</label>
+                            <select id="location">
+                                <option value="">Select location</option>
+                                <option value="mumbai">Mumbai Showroom</option>
+                                <option value="delhi">Delhi Showroom</option>
+                                <option value="bangalore">Bangalore Showroom</option>
+                                <option value="chennai">Chennai Showroom</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="variantSelect"><i class="fas fa-car"></i> Preferred Variant</label>
+                            <select id="variantSelect">
+                                <option value="">Select variant</option>
+                                <option value="ax">AX Optional</option>
+                                <option value="lx">LX</option>
+                                <option value="hardtop">Hard Top</option>
+                                <option value="convertible">Convertible</option>
+                            </select>
+                        </div>
+
+                        <div class="booking-summary">
+                            <h4>Test Drive Summary</h4>
+                            <div class="summary-item">
+                                <span>Selected Date:</span>
+                                <span id="selectedDate">Not selected</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Selected Time:</span>
+                                <span id="selectedTime">Not selected</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Location:</span>
+                                <span id="selectedLocation">Not selected</span>
+                            </div>
+                        </div>
+
+                        <button class="btn primary-btn btn-block" id="confirmBooking">
+                            <i class="fas fa-calendar-alt"></i> Confirm Test Drive
+                        </button>
+
+                        <p class="booking-note">
+                            <i class="fas fa-info-circle"></i> You'll receive a confirmation SMS and email within 15
+                            minutes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Visualization -->
+    <section class="performance-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Excellence</span>
+                <h2 class="section-title">Performance Analytics</h2>
+                <p class="section-subtitle">Explore Thar's capabilities through interactive visualizations</p>
+            </div>
+
+            <div class="performance-container">
+                <div class="performance-tabs">
+                    <button class="perf-tab active" data-tab="power">Power & Torque</button>
+                    <button class="perf-tab" data-tab="fuel">Fuel Efficiency</button>
+                    <button class="perf-tab" data-tab="offroad">Off-road Capability</button>
+                    <button class="perf-tab" data-tab="safety">Safety Features</button>
+                </div>
+
+                <div class="performance-content">
+                    <div class="perf-tab-content active" id="powerTab">
+                        <div class="chart-container">
+                            <canvas id="powerChart"></canvas>
+                        </div>
+                        <div class="chart-info">
+                            <h4>Engine Performance</h4>
+                            <p>The 2.0L mStallion Turbo Petrol engine delivers peak power of 130 kW @ 5000 rpm and
+                                maximum torque of 300 Nm @ 1750-3000 rpm.</p>
+                            <div class="chart-stats">
+                                <div class="stat">
+                                    <span class="stat-value">130</span>
+                                    <span class="stat-label">kW Power</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">300</span>
+                                    <span class="stat-label">Nm Torque</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">6.9s</span>
+                                    <span class="stat-label">0-100 km/h</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="perf-tab-content" id="fuelTab">
+                        <div class="chart-container">
+                            <canvas id="fuelChart"></canvas>
+                        </div>
+                        <div class="chart-info">
+                            <h4>Fuel Efficiency Comparison</h4>
+                            <p>Thar offers excellent fuel efficiency across both petrol and diesel variants, optimized
+                                for both city and highway driving.</p>
+                            <div class="chart-stats">
+                                <div class="stat">
+                                    <span class="stat-value">15.2</span>
+                                    <span class="stat-label">Petrol (km/l)</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">16.5</span>
+                                    <span class="stat-label">Diesel (km/l)</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">70L</span>
+                                    <span class="stat-label">Fuel Tank</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="perf-tab-content" id="offroadTab">
+                        <div class="offroad-features">
+                            <div class="offroad-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <h4>Approach Angle</h4>
+                                <p class="feature-value">42°</p>
+                                <p class="feature-desc">Maximum incline approach</p>
+                            </div>
+                            <div class="offroad-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tint"></i>
+                                </div>
+                                <h4>Water Wading</h4>
+                                <p class="feature-value">650mm</p>
+                                <p class="feature-desc">Deep water capability</p>
+                            </div>
+                            <div class="offroad-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-hill-rockslide"></i>
+                                </div>
+                                <h4>Departure Angle</h4>
+                                <p class="feature-value">33°</p>
+                                <p class="feature-desc">Maximum decline departure</p>
+                            </div>
+                            <div class="offroad-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-ruler-combined"></i>
+                                </div>
+                                <h4>Ground Clearance</h4>
+                                <p class="feature-value">226mm</p>
+                                <p class="feature-desc">Minimum ground clearance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="perf-tab-content" id="safetyTab">
+                        <div class="safety-features">
+                            <div class="safety-feature">
+                                <div class="safety-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>7 Airbags</h4>
+                                <p>Comprehensive airbag protection</p>
+                            </div>
+                            <div class="safety-feature">
+                                <div class="safety-icon">
+                                    <i class="fas fa-car-crash"></i>
+                                </div>
+                                <h4>ESP</h4>
+                                <p>Electronic Stability Program</p>
+                            </div>
+                            <div class="safety-feature">
+                                <div class="safety-icon">
+                                    <i class="fas fa-hill-rockslide"></i>
+                                </div>
+                                <h4>Hill Descent</h4>
+                                <p>Controlled downhill driving</p>
+                            </div>
+                            <div class="safety-feature">
+                                <div class="safety-icon">
+                                    <i class="fas fa-undo"></i>
+                                </div>
+                                <h4>Roll-over Mitigation</h4>
+                                <p>Advanced roll protection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery with 360 Viewer -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Experience</span>
+                <h2 class="section-title">360° Interactive Gallery</h2>
+                <p class="section-subtitle">Explore Thar from every angle with our immersive gallery</p>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-main">
+                    <div class="gallery-viewer" id="galleryViewer">
+                        <div class="viewer-image">
+                            <img src="Thar Night View.png" alt="Thar 360 View" id="mainViewerImage">
+                        </div>
+                        <div class="viewer-controls">
+                            <button class="viewer-btn" id="prevView">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="viewer-btn" id="nextView">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <button class="viewer-btn" id="toggleAR">
+                                <i class="fas fa-vr-cardboard"></i> AR View
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-thumbnails">
+                    <div class="thumbnail active" data-view="exterior">
+                        <img src="Thar Exterior View.png" alt="Exterior">
+                        <span>Exterior</span>
+                    </div>
+                    <div class="thumbnail" data-view="interior">
+                        <img src="Thar Interior View.png" alt="Interior">
+                        <span>Interior</span>
+                    </div>
+                    <div class="thumbnail" data-view="dashboard">
+                        <img src="Thar Dashboard.png" alt="Dashboard">
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="thumbnail" data-view="night">
+                        <img src="Thar Night Mode.png" alt="Night Mode">
+                        <span>Night Mode</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-container">
+                        <img src="Thar logo.png" alt="Thar Logo" class="footer-logo">
+                        <div class="footer-brand-text">
+                            <h3>MAHINDRA THAR</h3>
+                            <p>Redefining Adventure Since 2010</p>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">Built Tough. Designed Smart. Engineered for Adventure.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#overview"><i class="fas fa-chevron-right"></i> Overview</a></li>
+                        <li><a href="#configure"><i class="fas fa-chevron-right"></i> Configure</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#compare"><i class="fas fa-chevron-right"></i> Compare</a></li>
+                        <li><a href="#test-drive"><i class="fas fa-chevron-right"></i> Test Drive</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="contact-label">Toll Free</p>
+                                <p class="contact-value">1800-209-6006</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">thar@mahindra.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p class="contact-label">Headquarters</p>
+                                <p class="contact-value">Mumbai, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe for latest offers & updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 Mahindra & Mahindra Ltd. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <img src="Thar logo.png" alt="Logo" class="mobile-logo">
+                <div class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <ul class="mobile-nav">
+                <li><a href="#overview"><i class="fas fa-home"></i> Overview</a></li>
+                <li><a href="#configure"><i class="fas fa-sliders-h"></i> Configure</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="#compare"><i class="fas fa-balance-scale"></i> Compare</a></li>
+                <li><a href="#test-drive"><i class="fas fa-calendar-alt"></i> Test Drive</a></li>
+                <li class="mobile-cta">
+                    <a href="#test-drive" class="btn mobile-test-drive-btn">
+                        <i class="fas fa-calendar-alt"></i>
+                        Book Test Drive
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3><i class="fas fa-check-circle"></i> Success!</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modalMessage">Your configuration has been saved successfully!</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn primary-btn" id="modalOk">OK</button>
             </div>
         </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
